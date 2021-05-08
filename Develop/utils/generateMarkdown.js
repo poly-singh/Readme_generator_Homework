@@ -1,9 +1,9 @@
 function generateMarkdown(data, githubInfo) {
   return `
-# **${data.title}**
+# ${data.title}
 
-## Licensing:
-  [![license](https://img.shields.io/badge/license-${data.licensing}-blue)](https://shields.io)
+![contributors](https://img.shields.io/badge/MadeBY-poly--singh-green)
+[![license](https://img.shields.io/badge/license-${data.licensing}-blue)](https://shields.io)
 ## Description 
 ${data.description}
 ## Table of contents
@@ -18,18 +18,18 @@ ${data.description}
 ## Installation
         ${data.installation}
 ## Usage
-${data.usage}
+        ${data.usage}
 ## Licence
-[![license](https://img.shields.io/badge/license-${data.badge}-blue)](https://shields.io)
+[![license](https://img.shields.io/badge/license-${data.licensing}-blue)](https://shields.io)
 
 ## Contributors
-${data.contributing}
+![contributors](https://img.shields.io/badge/MadeBY-poly--singh-green)
 ## Test
-${data.test}
+![Test](https://img.shields.io/badge/test-100%25-green)
 ## Repository
 - [Project Repo](${data.repo})
 ## GitHub
-![Image of me](${githubInfo.githubImage})
+
 - ${githubInfo.name}
 - [GitHub Profile](${githubInfo.profile})
 - <${githubInfo.email}>

@@ -77,10 +77,8 @@ inquirer
     axios.get(queryUrl).then(function(res) {
         
         const githubInfo = {
-            githubImage: res.data.avatar_url,
-            email: res.data.email,
             profile: res.data.html_url,
-            name: res.data.name
+            name: res.data.name,
         };
         
       fs.writeFile("README.md", generate(data, githubInfo), function(err) {
